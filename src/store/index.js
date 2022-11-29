@@ -5,7 +5,7 @@ import axios from "axios";
 Vue.use(Vuex);
 
 const baseUrl = "https://todo.api.devcode.gethired.id";
-const userEmail = "dururu@gmail.com";
+const email = "ss396715@gmail.com";
 
 export default new Vuex.Store({
   state: {
@@ -68,7 +68,7 @@ export default new Vuex.Store({
         console.log();
         let response = await axios.get(`${baseUrl}/activity-groups`, {
           params: {
-            email: userEmail,
+            email: email,
           },
         });
 
@@ -85,7 +85,7 @@ export default new Vuex.Store({
       try {
         let response = await axios.post(`${baseUrl}/activity-groups`, {
           title: payload.title,
-          email: userEmail,
+          email: email,
         });
 
         return response.data;

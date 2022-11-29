@@ -58,7 +58,7 @@
             <label
               data-cy="todo-input-priority-label"
               class="mb-4 text-lg text-black font-semibold"
-              >PRIORITAS</label
+              >pilih label </label
             >
           </div>
           <div>
@@ -78,7 +78,7 @@
             class="px-6 py-2 text-white rounded-full submit-button"
             @click="onClickSubmit"
           >
-            Simpan
+            Save
           </button>
         </v-card-actions>
       </v-card>
